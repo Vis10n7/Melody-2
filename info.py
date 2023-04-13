@@ -42,22 +42,22 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ.get('API_ID', '16225550'))
+API_HASH = environ.get('API_HASH', '160343c3d2eaf54b556ad5a7c72a3b83')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5312771340:AAGjkk3e-27NAMY-m54nZb7wZ1q6DCF_Ub8")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Welcome area
-PICS = (environ.get('PICS', 'https://telegra.ph/file/e44fb77dad61d88fa77bd.png https://telegra.ph/file/8838f1c74bcc1a2d464e9.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/a0f5666a7ef1e0d4ecc16.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/58a8b06c059e194977fcf.jpg")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/3a1c31c86bb5c8c2dcfbf.jpg https://telegra.ph/file/573d2ac2615e0a11ecdd8.jpg https://telegra.ph/file/56c88fd799de1fdddcff5.jpg https://telegra.ph/file/64d8c4ccc44fea11c4953.jpg https://telegra.ph/file/273614c87ff4853c6c705.jpg https://telegra.ph/file/60b02b7b3b938ef38148a.jpg https://telegra.ph/file/6c58ccd1166e91d253de5.jpg https://telegra.ph/file/882d20b0a374b71de8534.jpg https://telegra.ph/file/11b5e79f90992c5f0f922.jpg https://telegra.ph/file/e0cec2ad83a635661b550.jpg https://telegra.ph/file/85a12855ceb53080553f6.jpg https://telegra.ph/file/f02f0f1e222fb2bb2b125.jpg https://telegra.ph/file/8d70dad72cd1fc4e345d8.jpg https://telegra.ph/file/8793f383b164e84c31f92.jpg https://telegra.ph/file/2d50b6fb671ca0170bc38.jpg https://telegra.ph/file/3089a5728b43d0373f1f0.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/225d02996e920bbf681ca.jpg")
+MELCOW_PIC = environ.get("MELCOW_PIC", "https://telegra.ph/file/d31136c86dcc124e07272.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1345179077').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001827951140').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -77,8 +77,8 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Zoro")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pikachpatel:pikach432@pikachucluster.7cwyq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "pikachucluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
