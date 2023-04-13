@@ -44,7 +44,7 @@ class evamaria(Client):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '16225550'))
 API_HASH = environ.get('API_HASH', '160343c3d2eaf54b556ad5a7c72a3b83')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5312771340:AAGjkk3e-27NAMY-m54nZb7wZ1q6DCF_Ub8")
+BOT_TOKEN = environ.get('BOT_TOKEN', "5312771340:AAFLFCgF0fEjP7ICx_dQjez2NNvCuN2feI0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -80,7 +80,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pikachpatel:pikach432@pikachucluster.7cwyq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "pikachucluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-MONGO_URL = os.environ.get('MONGO_URL', "")
+MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://pikachpatel:pikach432@pikachucluster.7cwyq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
