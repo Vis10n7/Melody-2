@@ -42,9 +42,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '16225550'))
-API_HASH = environ.get('API_HASH', '160343c3d2eaf54b556ad5a7c72a3b83')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5312771340:AAFLFCgF0fEjP7ICx_dQjez2NNvCuN2feI0")
+API_ID = int(environ.get('API_ID', '9801686'))
+API_HASH = environ.get('API_HASH', '2d61caaa63b33b368a03da09e55d6023')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6178379238:AAGg9hBEE8-AYcW9J3mzTeHD79FrW2Eh2ZE")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -78,7 +78,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pikachpatel:pikach432@pikachucluster.7cwyq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "pikachucluster")
+DATABASE_NAME = environ.get('DATABASE_NAME', "sastaacluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://pikachpatel:pikach432@pikachucluster.7cwyq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
@@ -87,20 +87,20 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '902284efd5e05828f51770d84f5ba26a6abf7751')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mdisklink.link')
+SHORTLINK_API = environ.get('SHORTLINK_API', '295103441f0f27b48a3cbf94364fe5d1e6331c65')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 S_GROUP = environ.get('S_GROUP',"")
 RLU_LNK = environ.get('RLU_LNK', 'https://telegra.ph/GROUP-RULES-02-22')
-GIT_LNK = environ.get('GIT_LNK', 'https://github.com/BLVCK-ANGEL')
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mvie_max')
-ANI_LNK = environ.get('ANI_LNK', 'https://t.me/mviemax_anime')
-SER_LNK = environ.get('SER_LNK', 'https://t.me/mviemax_series')
-CHNL_LNK = environ.get('CHNL_LNK', '')
+GIT_LNK = environ.get('GIT_LNK', 'https://github.com/nikhilvishwa7')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+fUv8WckDL7kwZWY1')
+ANI_LNK = environ.get('ANI_LNK', 'https://t.me/+fUv8WckDL7kwZWY1')
+SER_LNK = environ.get('SER_LNK', 'https://t.me/+fUv8WckDL7kwZWY1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/JB_Corporation')
 MSG_ALRT = environ.get('MSG_ALRT', '⚠️ ᴘɪʀᴀᴄʏ ɪs ᴄʀɪᴍᴇ ⚠️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
